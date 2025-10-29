@@ -14,8 +14,7 @@ public static class DependencyInjection
     {
         services.AddDbContext<SmartSalesDbContext>(options =>
             options.UseSqlServer(
-                configuration.GetConnectionString("SmartSalesConnectionString"),
-                b => b.MigrationsAssembly(typeof(SmartSalesDbContext).Assembly.FullName)));
+                configuration.GetConnectionString("SmartSalesConnectionString")));
 
 
         services.AddScoped<IUserRepository, UserRepository>();
