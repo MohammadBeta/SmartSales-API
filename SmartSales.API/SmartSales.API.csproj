@@ -5,10 +5,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10"/>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.10" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SmartSales.Infrastructure\SmartSales.Infrastructure.csproj"/>
+    <ProjectReference Include="..\SmartSales.Infrastructure\SmartSales.Infrastructure.csproj" />
+    <ProjectReference Include="..\SmartSales.Application\SmartSales.Application.csproj" />
   </ItemGroup>
 </Project>
