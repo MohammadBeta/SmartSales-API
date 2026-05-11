@@ -1,10 +1,15 @@
+﻿using SmartSales.Application.DTOs.Auth;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-using SmartSales.Application.DTOs.Auth;
-
-namespace SmartSales.Application.Services.Auth;
-
-public interface IAuthService
+namespace SmartSales.Application.Services.Auth
 {
-    Task<AuthResponseDto> LoginAsync(LoginRequestDto loginRequest);
-    Task<AuthResponseDto> RegisterAsync(RegisterRequestDto registerRequest);
+    public interface IAuthService
+    {
+        Task<RegisterResponseDto> RegisterAsync(RegisterRequestDto registerRequestDto);
+        Task<LoginResponseDto> LoginAsync(LoginRequestDto loginRequestDto); 
+    }
 }

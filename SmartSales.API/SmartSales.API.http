@@ -1,5 +1,0 @@
-@SmartSales.API_HostAddress = http://localhost:5077
-
-POST {{SmartSales.API_HostAddress}}/api/auth/login/
-
-###

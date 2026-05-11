@@ -1,12 +1,13 @@
-﻿using System;
+﻿using SmartSales.Domain.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmartSales.Application.DTOs.Auth
+namespace SmartSales.Domain.Entities
 {
-    public class RegisterRequestDto
+    public class User : BaseEntity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
