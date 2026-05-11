@@ -2,7 +2,7 @@ bin/
 obj/
 **/bin/
 **/obj/
-
+.vs/
 .fake
 .vs/ProjectEvaluation/smartsales.metadata.v9.bin
 .vs/ProjectEvaluation/smartsales.projects.v9.bin
