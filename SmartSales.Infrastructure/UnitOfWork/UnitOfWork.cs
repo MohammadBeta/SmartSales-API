@@ -11,16 +11,18 @@ namespace SmartSales.Infrastructure.UnitOfWork
     class UnitOfWork : IUnitOfWork
     {
         private readonly SmartSalesDbContext _context;
+        public IUserRepository Users { get; private set; }
+        public IProductRepository Products { get; private set; }
+        public ICustomerRepository Customers { get; private set; }
 
-        public UnitOfWork(SmartSalesDbContext context, IUserRepository userRepository, IProductRepository productRepository)
+
+        public UnitOfWork(SmartSalesDbContext context, IUserRepository userRepository, IProductRepository productRepository, ICustomerRepository customers)
         {
             _context = context;
             Users = userRepository;
             Products = productRepository;
+            Customers = customers;
         }
-
-        public IUserRepository Users { get; private set; }
-        public IProductRepository Products { get; private set; }
 
         public void Dispose()
         {

@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using SmartSales.Application.DTOs.Auth;
+using SmartSales.Application.DTOs.Customer;
 using SmartSales.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,9 @@ namespace SmartSales.Application.Mapping
             CreateMap<RegisterRequestDto, User>();
             CreateMap<User, RegisterResponseDto>();
             CreateMap<User, LoginResponseDto>();
+
+            CreateMap<Customer, CustomerDto>();
+            CreateMap<CreateCustomerRequestDto, Customer>();
         }
     }
 }

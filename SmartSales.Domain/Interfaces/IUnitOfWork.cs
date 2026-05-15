@@ -10,6 +10,8 @@ namespace SmartSales.Domain.Interfaces
     {
         IUserRepository Users { get; }
         IProductRepository Products { get; }
+        ICustomerRepository Customers { get; }
+
         Task<int> SaveChangesAsync();
     }
 }

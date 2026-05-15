@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using SmartSales.Application.Mapping;
+using SmartSales.Application.Services;
 using SmartSales.Application.Services.Auth;
 namespace SmartSales.Application
 {
@@ -11,6 +12,7 @@ namespace SmartSales.Application
   cfg.AddProfile<AutoMapperProfile>()
 );
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<ICustomerService, CustomerService>();
             return services;
         }
     }
